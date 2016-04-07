@@ -12,6 +12,7 @@ docker run --name some-sonarqube \
 ```sh
 docker run --name some-mysql \
            -e MYSQL_USER=sonar \
+           -e MYSQL_PASSWORD=sonar \
            -e MYSQL_DATABASE=sonar \
            -e MYSQL_ROOT_PASSWORD=verysecret \
            -d slsay/docker-mysql
