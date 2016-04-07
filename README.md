@@ -10,7 +10,11 @@ docker run --name some-sonarqube \
 ### 在MySQL中运行
 #### 1.启动MySQL
 ```sh
-docker run --name some-mysql -e MYSQL_ROOT_PASSWORD=sonar -e MYSQL_DATABASE=sonar -d slsay/docker-mysql
+docker run --name some-mysql \
+           -e MYSQL_ROOT_PASSWORD=sonar \ 
+           -e MYSQL_DATABASE=sonar \
+           -e MYSQL_ROOT_PASSWORD=verysecret \
+           -d slsay/docker-mysql
 ```
 #### 2. 运行redmine
 ```sh
