@@ -23,7 +23,7 @@ docker run --name some-mysql \
            -p 9000:9000 -p 9092:9092 \
            -e SONARQUBE_JDBC_USERNAME=sonar \
            -e SONARQUBE_JDBC_PASSWORD=sonar \
-           -e SONARQUBE_JDBC_URL=jdbc:mysql://some-mysql:3306/sonar?useUnicode=true\&characterEncoding=utf8\&rewriteBatchedStatements=true  \
+           -e SONARQUBE_JDBC_URL=jdbc:mysql://mysql:3306/sonar?useUnicode=true\&characterEncoding=utf8\&rewriteBatchedStatements=true  \
            --link some-mysql:mysql \
            -d slsay/docker-sonar
 ```
