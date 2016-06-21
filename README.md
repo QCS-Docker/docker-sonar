@@ -18,7 +18,7 @@ docker run --name some-mysql \
            -e MYSQL_ROOT_PASSWORD=verysecret \
            -d slsay/docker-mysql
 ```
-#### 2. 运行redmine
+#### 2. 运行sonar
 ```sh
    docker run --name some-sonarqube \
            -p 9000:9000 -p 9092:9092 \
