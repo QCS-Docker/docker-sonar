@@ -4,6 +4,7 @@ ENV SONARQUBE_HOME /opt/sonarqube
 
 # Http port
 EXPOSE 9000
+EXPOSE 9092
 
 # Database configuration
 # Defaults to using H2
