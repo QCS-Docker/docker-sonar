@@ -20,3 +20,10 @@ docker run --name some-mysql \
            --link some-mysql:mysql \
            -d slsay/docker-sonar
 ```
+
+### 访问sonar
+```sh
+docker-machine ip
+```
+http://MACHINE_VM_IP:9000/
+登录账号： admin/admin
