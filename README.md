@@ -25,5 +25,5 @@ docker run --name some-mysql \
 ```sh
 docker-machine ip
 ```
-http://MACHINE_VM_IP:9000/
+http://MACHINE_VM_IP:9000/  
 登录账号： admin/admin
