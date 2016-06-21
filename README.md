@@ -1,13 +1,5 @@
 # docker-sonar
 
-### 在H2 Database用运行 
-```sh
-docker run --name some-sonarqube \
-           -p 9000:9000 -p 9092:9092 \
-           -e SONARQUBE_JDBC_URL=jdbc:h2:tcp://192.168.99.100:9092/sonar  \
-           -d slsay/docker-sonar
-```
-
 ### 在MySQL中运行
 #### 1.启动MySQL
 ```sh
